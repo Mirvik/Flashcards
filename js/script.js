@@ -13,7 +13,7 @@ if (localStorage.getItem('cards_num') > 0){
             let k = document.querySelector("#k" + i);
             console.log(k);
             
-            k.classList.toggle('show');
+            k.classList.toggle("show");
         });
     }
 }
@@ -43,7 +43,7 @@ function addFlashcard() {
             let k = document.querySelector("#k" + i);
             console.log(k);
             
-            k.classList.toggle('.show');
+            k.classList.toggle('show');
         });
     }
 }
