@@ -2,7 +2,7 @@ let num = 0;
 let isVisible = false;
 let flash_no = 0;
 
-if (localStorage.getItem('cards_num') > 0){
+if (localStorage.getItem('cards_num') != '' && JSON.parse(localStorage.getItem('cards_num')) > 0){
     for (let i = 1; i < localStorage.length; i++){
         document.getElementById("flashcards").innerHTML += "<div class='flashcard'><p class='qst'>" + JSON.parse(localStorage.getItem('card'+i)).question + "</p><p class='answ' id='k" + JSON.parse(localStorage.getItem('card'+i)).num + "'>" + JSON.parse(localStorage.getItem('card'+i)).answer + "</p></div>";
     }
