@@ -87,10 +87,7 @@ body {
 	margin: 20px;
 	word-wrap: break-word;
 	padding: 20px;
-}
-
-.qst {
-
+	cursor: pointer;
 }
 
 .answ {
@@ -98,7 +95,7 @@ body {
 	text-align: center;
 	visibility: hidden;
 }
-.hide {
+.show {
 	opacity: 1;
 	visibility: visible;
 }
