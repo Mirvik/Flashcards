@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Flashcards</title>
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="nav">
+				<h1 class="logo">Flashcards</h1>
+				<div class="header__buttons">
+					<buttons class="btn" onclick="newCard()">New Card</buttons>
+					<buttons class="btn" onclick="delCard()">Del Card</buttons>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="container" id="containerWithCreateBox">
+		<div class="card" id="createBox">
+			<h2 class="title">Create card</h2>
+			<p class="question">Question</p>
+			<textarea name="question" id="question" cols="30" rows="3" placeholder="Who created Tesla?" class="area"></textarea>
+			<p class="answer">Answer</p>
+			<textarea name="answer" id="answer" cols="30" rows="3" placeholder="Elon Musk" class="area"></textarea>
+			<div class="buttons">
+				<button class="btn" id="save" onclick="addFlashcard()">Save</button>
+				<button class="btn" id="close" onclick="hideCreateBox()">Close</button>
+			</div>
+		</div>
+		<div class="flashcards" id="flashcards">
+
+		</div>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+</html>
